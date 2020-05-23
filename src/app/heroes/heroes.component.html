@@ -1,11 +1,14 @@
 <h2>My Heroes</h2>
 
 <ul class="heroes">
+  <!-- foreach hero of heroes in the list -->
+  <!--  -->
   <li *ngFor="let hero of heroes"
     [class.selected]="hero === selectedHero"
     (click)="onSelect(hero)">
+    <!-- display id and name -->
     <span class="badge">{{hero.id}}</span> {{hero.name}}
   </li>
 </ul>
-
+<!-- connects to the component hero-detail and sends the selectedHero -->
 <app-hero-detail [hero]="selectedHero"></app-hero-detail>

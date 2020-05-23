@@ -8,10 +8,11 @@ import { HEROES } from '../mock-heroes';
   styleUrls: ['./heroes.component.scss']
 })
 export class HeroesComponent implements OnInit {
-
+  // heroes list is equel
   heroes = HEROES;
+  // selected hero type of Hero 
   selectedHero: Hero;
-  
+  // function onSelect 
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
   }
@@ -22,4 +23,3 @@ export class HeroesComponent implements OnInit {
   }
 
 }
-

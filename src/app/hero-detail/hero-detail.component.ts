@@ -7,6 +7,7 @@ import { Hero } from '../hero';
   styleUrls: ['./hero-detail.component.scss']
 })
 export class HeroDetailComponent implements OnInit {
+  // the external HeroesComponent will bind to it like this.
   @Input() hero: Hero;
 
   constructor() { }

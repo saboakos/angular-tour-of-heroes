@@ -1,9 +1,12 @@
-<div *ngIf="hero">
-
+<!-- if hero property is set (on click) -->
+<div *ngIf="hero"> 
+    <!-- display hero name with pipe upper case -->
     <h2>{{hero.name | uppercase}} Details</h2>
+    <!-- display id - one way binding to hero.id -->
     <div><span>id: </span>{{hero.id}}</div>
     <div>
       <label>name:
+        <!-- display name in input field - two way binding -->
         <input [(ngModel)]="hero.name" placeholder="name"/>
       </label>
     </div>
